@@ -1,0 +1,410 @@
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 2%;
+  right: 2%;
+  display: none;
+  cursor: pointer;
+  color: grey;
+}
+
+#btn-back-to-top:hover{
+  color: black;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+/*navbar start*/
+
+#title{
+  background-color: #0f467c;
+  position: fixed;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+  width: 100%;
+}
+
+.container-fluid{
+  padding: 0.5% 3%;
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand{
+  font-family: "Montserrat", sans-serif;
+  font-size: 25px;
+  margin: 5 0 0 10px;
+  color: white;
+}
+
+.navbar-brand:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.nav-item{
+  padding: 5px;
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+
+/*navbar end*/
+
+/*carosuel start */
+
+  #testimonials{
+    position: relative;
+    top: 6rem;
+    display: inline-block;
+  }
+  
+  .carousel-caption {
+     font-family: "Montserrat", sans-serif;
+     line-height: 20px;
+     text-shadow: rgb(0, 0, 0) 4px 4px;
+  }
+  
+  .first-text{
+  font-size: 20px;
+  }
+
+  .d-block{
+    width: 100%;
+  }
+
+@media only screen and (max-width:1919px) and (min-width:701px){
+  #testimonials{
+    position: relative;
+    top: 6rem;
+  }
+
+}
+
+@media only screen and (max-width:700px) {
+
+  #testimonials{
+    position: relative;
+    top: 6rem;
+  }
+
+  .carousel {
+    height: 250px;
+  }
+  
+  .d-block{
+    height: 250px;
+  }
+  
+}
+
+
+/*carosuel end */
+
+/*features start*/
+#features{
+  padding: 7%;
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+}
+
+.features-box{
+  text-align: center;
+}
+
+.icon{
+  color: #0f467c;
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.icon:hover{
+  opacity: 0.7;
+}
+
+.features-text{
+  color: grey;
+}
+
+@media only screen and (max-width:700px) {
+
+  #features{
+    padding-top: 18%;
+    
+    position: relative;
+  }
+  
+  .features-box{
+    text-align: center;
+    font-size: 9px;
+  }
+  
+  .icon{
+    color: #0f467c;
+    margin-top: 3.5rem;
+
+}
+}
+
+
+/*features end*/
+
+
+
+/*about-us start*/
+
+#about-us{
+  font-size: 3.2rem;
+  line-height: 40px;
+  padding: 1%;
+  background-color: #0f467c;
+  color: white;
+  text-align: center;
+  }
+  
+
+  .about-text{
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: bold;
+    line-height: 44px;
+    margin: 30px;
+  }
+  
+@media only screen and (max-width:700px) {
+  #about-us{
+    font-size: 3.2rem;
+    padding: 3%;
+    background-color: #0f467c;
+    color: white;
+    }
+    
+    .about-text{
+      font-size: 3px;
+      font-family: 'Varela Round', sans-serif;
+      font-weight: bold;
+      line-height: 25px;
+      margin: 30px;
+    }
+}
+
+
+
+/*about-us end*/
+
+/*services start*/
+#services{
+  padding: 5% 4%;
+  text-align: center;
+}
+
+.flip-card {
+  width: 300px;
+  height: 280px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 1% 1.5% ;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+}
+
+.flip-card-front {
+  background-color: #0f467c;
+  color: white;
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+.flip-card-back {
+  background-color: #0f467c;
+  color: white;
+  padding: 23px;
+  transform: rotateY(180deg);
+  border: 0px solid;
+  border-radius: 5px;
+}
+
+.back-text{
+  font-size: 14px;
+  margin-top: 20px;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.card-logo{
+    width: 80px;
+    height: 80px;
+    margin-top: 80px;
+    margin-left: 10px;
+}
+
+.flip-card-front-text{
+margin-top: 1rem;
+}
+
+@media only screen and (max-width:700px) {
+.flip-card {
+  margin-top: 10%;
+ 
+  }
+
+}
+
+/*services end*/
+
+/*card border start*/
+
+#row{
+  text-align: center;
+  padding-bottom: 3%;
+}
+
+.link-title{
+  font-weight: bold;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.beneficial{
+  display: inline-block;
+  height: 200px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+  margin: 1% 1%;
+  width: 18rem;
+}
+
+.beneficial:hover{
+box-shadow: none;
+}
+
+.card-title{
+  font-family: 'Varela Round', sans-serif;
+  font-weight: bold;
+  position: relative;
+  top: 40px;
+  color: #0f467c;
+  text-align: center;
+}
+
+.card-text{
+  position: relative;
+  top: 40px;
+  color:  grey;
+  text-align: center;
+}
+
+.card-icon{
+  position: relative;
+  right: 35px;
+  color: white;
+}
+
+
+.circle{
+  position: relative;
+  left: 15px;
+  top: 20px;
+  color: #0f467c;
+}
+
+.circle:hover{
+  opacity: 0.8;
+}
+
+.link-title{
+  font-weight: bold;
+}
+
+@media only screen and (max-width:700px) {
+.beneficial{
+  margin-top: 15%;
+}
+
+}
+/*card border end*/
+
+
+
+/*footer start*/
+
+.p-3{
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.col-md-3{
+  margin-top: 60px;
+}
+
+.col-md-4{
+  margin-top: 30px;
+}
+
+.text-center{
+  background-color: #0f467c;
+  font-size: 10px;
+}
+
+.fa-brands{
+  color: white;
+  margin-left: 5px;
+}
+
+.fa-brands:hover{
+  color: #9DD0FF;
+}
+
+.text-uppercase{
+  margin-top: 10px;
+}
+ .sp{
+  margin-top: 30px;
+ }
+
+.connection{
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.connection:hover{
+  color: #9DD0FF;
+}
+
+.font{
+  width: 15px;
+  height: 15px;
+}
+
+/*footer end*/
